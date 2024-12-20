@@ -1,0 +1,105 @@
+th.matrix-table-column-sort {
+    background: @table-header-sort-bg !important;
+}
+td.matrix-table-column-sort {
+    background: @table-body-sort-bg !important;
+}
+
+// **************** sortable-tree-list-column ****************
+
+.sortable-tree-matrix-container {
+    min-height: 100px;
+
+    .sortable-tree-matrix-button-add-one {
+    }
+
+    .sortable-tree-matrix-button-add-two {
+    }
+
+    .sortable-tree-matrix-content {
+        display: inline-block;
+        vertical-align: middle;
+        flex: 0 1 auto;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .sortable-tree-matrix-content-rows {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        height: 100%;
+        min-width: 230px;
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border: 1px dashed rgb(217, 217, 217);
+        border-radius: 5px;
+        box-shadow: none !important;
+        transition: none !important;
+    }
+
+    .sortable-tree-matrix-row {
+        cursor: pointer;
+    }
+
+    .sortable-tree-matrix-row-with-subtitle {
+        display: block;
+    }
+
+    .sortable-tree-matrix-content-rows-move-drag-source {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding: 5px;
+        background: #f6f7f9;
+    }
+
+    .sortable-tree-matrix-row-text {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    .sortable-tree-matrix-row-text-toolbar {
+        display: inline-block;
+        vertical-align: middle;
+        flex: 0 1 auto;
+        display: flex;
+    }
+    .sortable-tree-matrix-row-text-toolbar-button {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .sortable-tree-matrix-content-rows {
+        &:hover {
+            .remove-icon {
+                display: flex !important;
+            }
+        }
+    }
+
+    .sortable-tree-matrix-row-text-toolbar-invalid-drop {
+        background: #ffe3df;
+    }
+}
+.sortable-tree-matrix-content-rows {
+    .draggable-row > .move {
+        padding: 7px !important;
+    }
+}
+.draggable-row {
+    &:hover {
+        .matrix-table-remove-btn {
+            display: block;
+        }
+    }
+    .matrix-table-remove-btn {
+        display: none;
+    }
+}
+
+// **************** end sortable-tree-list-column ****************

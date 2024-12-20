@@ -1,0 +1,22 @@
+@import "custom-antd.less";
+
+.restful-addon-before {
+  width: 100px !important;
+
+  .ant-select-selector {
+    .ant-select-selection-item {
+      line-height: 32px;
+    }
+  }
+}
+
+.rest-endpoint-collapse {
+  &.enabled {
+    color: @primary-color;
+  }
+
+  &.disabled {
+    color: @normal-color;
+    font-weight: 300;
+  }
+}

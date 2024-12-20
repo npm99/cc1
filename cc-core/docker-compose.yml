@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+    cc-core:
+        build:
+            context: .
+        image: cc-core
+        container_name: cc-core
+        restart: always
+        env_file: .env
+        ports:
+            - "3000:3000"

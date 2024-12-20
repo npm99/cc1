@@ -1,0 +1,309 @@
+{
+  "detail": {
+    "title": {
+      "format": "Cache Management"
+    },
+    "blocks": [
+      {
+        "key": "556f6c43e6de0b7df89d",
+        "type": "tabs",
+        "tabs": [
+          {
+            "title": "Global",
+            "key": "d79ed9ded02e576344cc",
+            "blocks": [
+              {
+                "key": "36fb55222440b23479ac",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_15b446df73392024de30",
+                        "key": "enabled",
+                        "label": "Enabled Cache",
+                        "description": "Global Cache enable / disable",
+                        "default_value": true,
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": []
+                      }
+                    ],
+                    [
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_71b3f3d6d929456955c3",
+                        "key": "warmup_interval",
+                        "label": "Warmup Interval",
+                        "link_type": "key",
+                        "suffix": "Minutes",
+                        "trigger": [],
+                        "decimal_place": 0
+                      }
+                    ]
+                  ]
+                }
+              }
+            ],
+            "actions": [
+              {
+                "enable": true,
+                "type": "action",
+                "icon": "Trash2",
+                "color": "#ff0000ff",
+                "label": "Flush Cache",
+                "tooltip": "Flush All Cache",
+                "method": "patch",
+                "url": "/cache/flush",
+                "params": []
+              },
+              {
+                "enable": true,
+                "type": "action",
+                "color": "list_detail.primary_color",
+                "label": "Force Warmup",
+                "method": "patch",
+                "url": "/cache/warmup",
+                "params": [],
+                "icon": "Loader"
+              }
+            ],
+            "extra_data": []
+          },
+          {
+            "title": "Modules",
+            "key": "d57730d5d7af85524db4",
+            "blocks": [
+              {
+                "key": "e9d5bbb4bc119ca75b02",
+                "type": "items_list",
+                "field": "items_list",
+                "layout_detail": [
+                  {
+                    "title": "Items List",
+                    "key": "5b957f07d4765d5de698",
+                    "blocks": [
+                      {
+                        "key": "7137f5f4a12786a20c94",
+                        "type": "column",
+                        "layout": {
+                          "num_of_col": 2,
+                          "fields": [
+                            [
+                              {
+                                "field": "switch",
+                                "type": "standard_component",
+                                "unique_key": "standard_component_switch_bb67f01b855fa1f66929",
+                                "key": "enabled",
+                                "label": "Enabled Cache",
+                                "description": "Enabled Cache in module level",
+                                "link_type": "key",
+                                "yes_label": "Yes",
+                                "no_label": "No",
+                                "trigger": []
+                              }
+                            ],
+                            [
+                              {
+                                "field": "input_number",
+                                "type": "standard_component",
+                                "unique_key": "standard_component_input_number_687ac12d52e65ac0f52e",
+                                "key": "ttl",
+                                "label": "Cache TTL",
+                                "link_type": "key",
+                                "suffix": "Minutes",
+                                "trigger": [],
+                                "decimal_place": 0
+                              }
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "key": "2abb9ae89cc05349f04c",
+                        "type": "column",
+                        "layout": {
+                          "num_of_col": 1,
+                          "fields": [
+                            [
+                              {
+                                "field": "edit_table",
+                                "type": "advanced_component",
+                                "label": "Warmup List",
+                                "unique_key": "advanced_component_edit_table_77ba27364da306851c1f",
+                                "key": "warmup_list",
+                                "link_type": "key",
+                                "entity": "custom",
+                                "filters": [
+                                  null
+                                ],
+                                "hide_label": false,
+                                "list": [
+                                  {
+                                    "type": "adjust",
+                                    "field": "name",
+                                    "label": "Name",
+                                    "read_only": [],
+                                    "validate": {},
+                                    "field_type": "string",
+                                    "use_function": false,
+                                    "entity": "not_use"
+                                  },
+                                  {
+                                    "type": "adjust",
+                                    "field": "path",
+                                    "label": "Path",
+                                    "read_only": [],
+                                    "validate": {},
+                                    "field_type": "string",
+                                    "use_function": false,
+                                    "entity": "not_use"
+                                  },
+                                  {
+                                    "type": "adjust",
+                                    "field": "query",
+                                    "label": "Query",
+                                    "read_only": [],
+                                    "validate": {},
+                                    "field_type": "string",
+                                    "use_function": false,
+                                    "entity": "not_use"
+                                  }
+                                ],
+                                "use_currency": false
+                              }
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "key": "26aa7fbfec6d413e94bb",
+                        "type": "column",
+                        "layout": {
+                          "num_of_col": 1,
+                          "fields": [
+                            [
+                              {
+                                "field": "input",
+                                "type": "standard_component",
+                                "unique_key": "standard_component_input_3de949b61e2d4e7d831e",
+                                "key": "name",
+                                "label": "Name",
+                                "link_type": "key",
+                                "entity": "not_use",
+                                "input_type": "single_line",
+                                "hidden": true,
+                                "trigger": []
+                              }
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "static_layout_detail": [
+                  {
+                    "key": "92ae137a22e9370dc6db",
+                    "blocks": []
+                  }
+                ],
+                "keyData": "modules",
+                "link_type": "key",
+                "entity": "current_entity",
+                "list_template": "<p><strong>${ name }</strong></p>\n",
+                "items_list_mode": "dynamic",
+                "use_data_from_source": true,
+                "actions": [
+                  {
+                    "system": true,
+                    "enable": true,
+                    "label": "Save",
+                    "type": "action",
+                    "color": "#1ac0f5",
+                    "need_confirm": true,
+                    "save_items_list": true,
+                    "confirm_message": "Would you like to save this item?"
+                  },
+                  {
+                    "system": true,
+                    "enable": true,
+                    "icon": "Trash2",
+                    "type": "action",
+                    "color": "#ff4d4fff",
+                    "need_confirm": true,
+                    "remove_items_list": true,
+                    "confirm_message": "Are you sure you want to delete?"
+                  },
+                  {
+                    "enable": true,
+                    "type": "action",
+                    "label": "Flush Cache",
+                    "tooltip": "Flush all cache for module",
+                    "method": "patch",
+                    "url": "/cache/flush/:module",
+                    "params": [
+                      {
+                        "key": "module",
+                        "value": "${ name }"
+                      }
+                    ],
+                    "icon": "Trash2"
+                  },
+                  {
+                    "enable": true,
+                    "type": "action",
+                    "icon": "Loader",
+                    "color": "list_detail.primary_color",
+                    "label": "Force Warmup",
+                    "method": "patch",
+                    "url": "/cache/warmup/:module",
+                    "params": [
+                      {
+                        "key": "module",
+                        "value": "${ name }"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "is_popup": false,
+    "redirect_mode": "not_redirect"
+  },
+  "list": {
+    "allow_search": false,
+    "allow_sort": false,
+    "allow_filter": false,
+    "allow_bulk": false,
+    "entries_per_page": 10,
+    "default_sort": "_translates",
+    "columns": []
+  },
+  "name": "Cache",
+  "code": "cache",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "restriction": [],
+  "allow_workflow_actions": false
+}

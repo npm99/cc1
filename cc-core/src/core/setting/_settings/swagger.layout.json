@@ -1,0 +1,128 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "4519096f7e240dfccabb",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_4b5e45f150ffb34a6150",
+                "key": "owner",
+                "label": "Owner",
+                "required": true,
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": [
+                  {
+                    "field": "standard_component_label_b72763a3115a2adf3392",
+                    "method": "show",
+                    "value": "!_.isEmpty('${ owner }') & !_.isEmpty('${ doc_name }')"
+                  }
+                ]
+              },
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_4b5e45f150ffb34a6151",
+                "key": "api_key",
+                "label": "Api Key",
+                "required": true,
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_4b5e45f150ffb34a6152",
+                "key": "doc_name",
+                "label": "Document Name",
+                "required": true,
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": [
+                  {
+                    "field": "standard_component_label_b72763a3115a2adf3392",
+                    "method": "show",
+                    "value": "!_.isEmpty('${ owner }') & !_.isEmpty('${ doc_name }')"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "142b4521325612b5a522",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_b72763a3115a2adf3392",
+                "label": "Doc URL",
+                "format": "<p><a href=\"https://app.swaggerhub.com/apis-docs/${ owner }/${ doc_name }\" target=\"_blank\">https://app.swaggerhub.com/apis-docs/${ owner }/${ doc_name }</a></p>"
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "not_redirect"
+  },
+  "name": "Swagger",
+  "code": "swagger",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "_custom_actions": [
+    {
+      "system": true,
+      "name": "Publish",
+      "enabled": true,
+      "allow_layouts": [
+        "swagger"
+      ],
+      "type": "internal",
+      "show_on": "detail",
+      "export_filter": false,
+      "confirm": true,
+      "internal_actions": [
+        {
+          "path": "/swagger/publish",
+          "method": "patch"
+        }
+      ]
+    }
+  ],
+  "deploy_package_settings": [
+    "swagger"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

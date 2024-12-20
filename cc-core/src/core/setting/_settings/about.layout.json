@@ -1,0 +1,105 @@
+{
+  "name": "About",
+  "code": "about",
+  "type": [
+    "form"
+  ],
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "491de1323dfe4a081997",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_203ab8c2d511e0ed02ee",
+                "label": "Software Version",
+                "entity": "about_page",
+                "format": "<h3><strong style=\"font-size: 18px;\">Software Version:&nbsp;</strong><span style=\"background-color: #e4eef5; border: 2px solid #337cab; border-radius: 10px; padding: 5px; font-size: 14px; color: #337cab;\">${ api_version.0.software_version }</span></h3>\n<p>Last date of deployment:&nbsp;${ api_version.0.deploy_date }</p>",
+                "hide_label": true,
+                "show_empty": false,
+                "_translates": {
+                  "en-US": {
+                    "label": "Software Version",
+                    "placeholder": "",
+                    "description": "",
+                    "format": "<h3><strong style=\"font-size: 18px;\">Software Version:&nbsp;</strong><span style=\"background-color: #e4eef5; border: 2px solid #337cab; border-radius: 10px; padding: 5px; font-size: 14px; color: #337cab;\">${ api_version.0.software_version }</span></h3>\n<p>Last date of deployment:&nbsp;${ api_version.0.deploy_date }</p>"
+                  }
+                }
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "54657c709517706a4d8b",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_fdb28af5a8f03706e22c",
+                "label": "CORE Lib version",
+                "entity": "about_page",
+                "format": "<p><span style=\"font-size: 18px;\"><strong>CORE Lib version:&nbsp;</strong><span style=\"background-color: #e4eef5; border: 2px solid #337cab; border-radius: 10px; padding: 5px; font-size: 14px; color: #337cab;\">${ api_version.0.lib_version }</span></span></p>\n<table style=\"border-collapse: collapse; width: 54.8747%; height: 301px;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 40%;\">\n                <div><span style=\"font-size: 18px;\">NODE VERSION</span></div>\n            </td>\n            <td style=\"width: 60%;\"><span style=\"font-size: 18px;\">${ api_version.0.node_version }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">NODE ENV<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.node_env }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">LOOP_BACK_IP</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.loop_back_ip }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">MONGO_DB</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.mongo_db }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">SESSION_REDIS_URL</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.session_redis_url }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">CACHE_REDIS_URL</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.cache_redis_url }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">QUEUE_REDIS_URL<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.queue_redis_url }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">MAX_WORKER</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.max_worker }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">QUEUE_CONCURRENCY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.queue_concurrency }<br></span></td>\n        </tr>\n    </tbody>\n</table>\n<p><br></p>",
+                "hide_label": true,
+                "show_empty": false,
+                "_translates": {
+                  "en-US": {
+                    "label": "CORE Lib version",
+                    "placeholder": "",
+                    "description": "",
+                    "format": "<p><span style=\"font-size: 18px;\"><strong>CORE Lib version:&nbsp;</strong><span style=\"background-color: #e4eef5; border: 2px solid #337cab; border-radius: 10px; padding: 5px; font-size: 14px; color: #337cab;\">${ api_version.0.lib_version }</span></span></p>\n<table style=\"border-collapse: collapse; width: 54.8747%; height: 301px;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 40%;\">\n                <div><span style=\"font-size: 18px;\">NODE VERSION</span></div>\n            </td>\n            <td style=\"width: 60%;\"><span style=\"font-size: 18px;\">${ api_version.0.node_version }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">NODE ENV<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.node_env }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">LOOP_BACK_IP</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.loop_back_ip }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">MONGO_DB</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.mongo_db }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">SESSION_REDIS_URL</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.session_redis_url }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">CACHE_REDIS_URL</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.cache_redis_url }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">QUEUE_REDIS_URL<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.queue_redis_url }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">MAX_WORKER</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.max_worker }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">QUEUE_CONCURRENCY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ api_version.0.queue_concurrency }<br></span></td>\n        </tr>\n    </tbody>\n</table>\n<p><br></p>"
+                  }
+                }
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "aa2eb7a84ccc190d7fc2",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_b4883aefd3589ce3d1da",
+                "label": "ADMIN Lib version",
+                "entity": "about_page",
+                "format": "<h3><span style=\"font-size: 18px;\"><strong>ADMIN Lib version:&nbsp;</strong><span style=\"background-color: rgb(228, 238, 245); border: 2px solid rgb(51, 124, 171); border-radius: 10px; padding: 5px; color: rgb(51, 124, 171); font-size: 14px;\">${ admin_version.0.lib_version }</span></span></h3>\n<table style=\"border-collapse: collapse; width: 56.8245%; height: 301px;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 38.7255%;\"><span style=\"font-size: 18px;\">NODE VERSION<br></span></td>\n            <td style=\"width: 61.1111%;\"><span style=\"font-size: 18px;\"> ${ admin_version.0.node_version }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">NODE ENV<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.node_env }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">COOKIE_SECURE</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.cookie_secure }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">COOKIE_HTTP_ONLY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.cookie_http_only }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">COOKIE_SAME_SITE</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.cookie_same_stie }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">SYSTEM_APP_KEY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.system_app_key }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">SYSTEM_SECRET_KEY<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.system_secret_key }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">API_GATEWAY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.api_gateway }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">API_GATEWAY_MEDIA</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.api_gateway_media }<br></span></td>\n        </tr>\n    </tbody>\n</table>\n<p><br></p>",
+                "hide_label": true,
+                "show_empty": false,
+                "_translates": {
+                  "en-US": {
+                    "label": "ADMIN Lib version",
+                    "placeholder": "",
+                    "description": "",
+                    "format": "<h3><span style=\"font-size: 18px;\"><strong>ADMIN Lib version:&nbsp;</strong><span style=\"background-color: rgb(228, 238, 245); border: 2px solid rgb(51, 124, 171); border-radius: 10px; padding: 5px; color: rgb(51, 124, 171); font-size: 14px;\">${ admin_version.0.lib_version }</span></span></h3>\n<table style=\"border-collapse: collapse; width: 56.8245%; height: 301px;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 38.7255%;\"><span style=\"font-size: 18px;\">NODE VERSION<br></span></td>\n            <td style=\"width: 61.1111%;\"><span style=\"font-size: 18px;\"> ${ admin_version.0.node_version }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">NODE ENV<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.node_env }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">COOKIE_SECURE</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.cookie_secure }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">COOKIE_HTTP_ONLY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.cookie_http_only }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">COOKIE_SAME_SITE</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.cookie_same_stie }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">SYSTEM_APP_KEY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.system_app_key }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">SYSTEM_SECRET_KEY<br></span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.system_secret_key }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">API_GATEWAY</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.api_gateway }<br></span></td>\n        </tr>\n        <tr>\n            <td><span style=\"font-size: 18px;\">API_GATEWAY_MEDIA</span></td>\n            <td><span style=\"font-size: 18px;\"> ${ admin_version.0.api_gateway_media }<br></span></td>\n        </tr>\n    </tbody>\n</table>\n<p><br></p>"
+                  }
+                }
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "redirect"
+  },
+  "allow_actions": [],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_save": true,
+  "hide_refresh": true
+}

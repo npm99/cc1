@@ -1,0 +1,39 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [],
+    "is_popup": false,
+    "redirect_mode": "not_redirect"
+  },
+  "list": {
+    "allow_search": false,
+    "allow_sort": false,
+    "allow_filter": false,
+    "allow_bulk": false,
+    "entries_per_page": 10,
+    "default_sort": "id",
+    "columns": [],
+    "row_conditions": []
+  },
+  "name": "logs",
+  "code": "logs",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "allow_workflow_actions": false,
+  "id": "f946f190dcfa07fe4dc4"
+}

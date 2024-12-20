@@ -1,0 +1,69 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "80bbead236c45bb2a8d5",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_e9fecf9bf32b7a009476",
+                "key": "import_export_setting.export_maximum_rows",
+                "label": "Export Maximum Rows",
+                "default_value": 10000,
+                "link_type": "key",
+                "min_value": 1,
+                "trigger": [],
+                "decimal_place": 0,
+                "required": true
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_03fbfc198782fc2db785",
+                "key": "import_export_setting.show_log_maximum_day",
+                "label": "Maximum days show Import/Export Log",
+                "description": "example : 1m, 1h, 1d",
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "reg_exp_pattern": "^[0-9]*[hmd]",
+                "trigger": [],
+                "use_function": false
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "not_redirect"
+  },
+  "name": "Import Export",
+  "code": "import_export",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

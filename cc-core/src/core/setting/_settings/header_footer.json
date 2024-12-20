@@ -1,0 +1,83 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "574a3e3eabd1e444bb98",
+        "type": "column",
+        "layout": {
+          "num_of_col": 6,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_fd86fc7f603a1e44959f",
+                "key": "header.breadcrumb_hover_color",
+                "label": "Breadcrumb Hover Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_63cd4264860092f38299",
+                "key": "header.background_color",
+                "label": "Background Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "54166ce7b2cff59b2692",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_c77b2a7686179d6bf1eb",
+                "key": "footer.content",
+                "label": "Content",
+                "link_type": "key",
+                "input_type": "wysiwyg",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "refresh"
+  },
+  "name": "Header & Footer",
+  "code": "header_footer",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

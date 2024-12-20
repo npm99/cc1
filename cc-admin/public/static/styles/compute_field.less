@@ -1,0 +1,250 @@
+@import "custom-antd.less";
+
+.mutiline-format {
+    margin-bottom: 24px;
+
+  @media (max-width: 991px) {
+    overflow: scroll;
+  }
+  
+  .empty-mutiline-format {
+    height       : 100px;
+    border       : 1px solid;
+    border-style : dashed;
+    border-radius: 5px;
+    border-color : #d9d9d9;
+
+        .ant-form-item-has-error {
+            border-color: @error-color;
+        }
+    }
+
+    .ant-form-item-has-error {
+        .empty-mutiline-format {
+            border-color: @error-color;
+        }
+
+        .mutiline-format {
+            border: 1px solid;
+            border-style: dashed;
+            border-radius: 5px;
+            border-color: @error-color;
+        }
+    }
+}
+
+.search-data-field {
+    margin-bottom: 24px;
+
+    .empty-search-data-field {
+        height: 100px;
+        border: 1px solid;
+        border-style: dashed;
+        border-radius: 5px;
+        border-color: #d9d9d9;
+    }
+}
+
+.summary-box-field {
+    border: 1px dashed #939393;
+    padding: 15px;
+    background: #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 24px;
+
+    .text {
+        &.number {
+            font-size: 30px;
+        }
+
+        &.unit {
+            font-size: 22px;
+        }
+
+        &.description {
+            font-size: 15px;
+        }
+    }
+}
+
+.form-list {
+    &.mapping-field,
+    &.select-list-layout-list,
+    &.draggable-none-border {
+        margin-bottom: 16px;
+
+        .ant-row {
+            flex-flow: row;
+        }
+
+        .draggable-row {
+            border: none;
+            margin: 0;
+            border-radius: 0;
+
+            .move {
+                background: none;
+            }
+        }
+
+        .addable-table-minus-button {
+            margin-top: 6px;
+        }
+
+        .ant-input-group-addon {
+            .anticon-edit:hover {
+                color: @primary-color;
+            }
+        }
+    }
+
+    &.export-filter {
+        margin-bottom: 16px;
+
+        .export-filter-item {
+            margin-bottom: 10px;
+        }
+
+        .addable-table-minus-button {
+            margin-top: 6px;
+        }
+
+        .ant-btn-link {
+            margin-top: -5px;
+        }
+    }
+
+    &.excel-advanced-row-format {
+        margin-bottom: 16px;
+
+        .excel-advanced-row-format-item {
+            margin-bottom: 10px;
+        }
+
+        .addable-table-minus-button {
+            margin-top: 6px;
+        }
+
+        .ant-btn-link {
+            margin-top: -5px;
+        }
+    }
+
+    &.condition-field {
+        margin-bottom: 16px;
+
+        .condition-field-item {
+            margin-bottom: 10px;
+        }
+
+        .addable-table-minus-button {
+            margin-top: 6px;
+        }
+
+        .ant-btn-link {
+            margin-top: -5px;
+        }
+    }
+
+    &.tree-node-icon {
+        .tree-node-icon-item {
+            border: 1px dashed @border-color-base;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 16px;
+        }
+    }
+
+    &.attachments {
+        margin-bottom: 16px;
+        margin: 0px 4px;
+
+        .formlist-attachments-item {
+            border: 1px dashed @border-color-base;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding-right: 4px;
+        }
+
+        .attachments-item {
+            padding: 16px;
+            padding-right: 0px;
+        }
+
+        .addable-table-minus-button {
+            margin-top: 6px;
+        }
+
+        .ant-btn-link {
+            margin-top: -5px;
+        }
+    }
+}
+
+.comment-list {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 24px;
+
+    .ant-list-header {
+        background: white;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        padding: 10px;
+    }
+
+    .ant-list-item {
+        padding: 10px;
+    }
+}
+
+.comment-list-row {
+    &.oddRow {
+        background: #f5f5f5 !important;
+    }
+}
+
+.comment-list-row:hover {
+    background: tint(@primary-color, 87%) !important;
+}
+
+.autoComplete-box {
+    display: flex;
+    width: 100%;
+}
+
+.select-option-entity {
+    .ant-select-multiple .ant-select-selection-item {
+        height: 30px !important;
+        padding-top: 3px !important;
+    }
+}
+.summary-box-component {
+    padding: 15px;
+    background: #d9d9d9;
+    border-radius: 5px;
+    .icon {
+        text-align: center;
+    }
+    .text {
+        &.sum {
+            font-size: 40px;
+        }
+        &.description {
+            font-size: 15px;
+            &.unit {
+                font-size: 22px;
+            }
+            &.description {
+                font-size: 20px;
+            }
+            &.sum {
+                font-size: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,1003 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "b2011b040e3d13cb22a0",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "switch",
+                "type": "standard_component",
+                "unique_key": "standard_component_switch_fdbf631109fd402c3f7f",
+                "key": "multiple_session",
+                "label": "Multiple Session",
+                "default_value": true,
+                "link_type": "key",
+                "yes_label": "Yes",
+                "no_label": "No",
+                "trigger": [],
+                "name": "multiple_session"
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "8cda8a009154eea31a02",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_4cb6a115b3902a168a6c",
+                "label": "Authentication",
+                "entity": "test_setting",
+                "format": "<p><br></p><h3>Authentication</h3>",
+                "hide_label": true
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "427b62cfffb85619a198",
+        "type": "collapse",
+        "allow_add": false,
+        "data_source": "",
+        "body": [
+          {
+            "title": "2FA",
+            "key": "5a1d8b64d1cb13922c76",
+            "blocks": [
+              {
+                "key": "61afc154382c153f0cba",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_d53783b828587befa50a",
+                        "key": "enable",
+                        "label": "Enable",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": [
+                          {
+                            "field": "standard_component_select_6db3a7c7d9769e34645f",
+                            "method": "required",
+                            "value": "${ authenticator.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_750b3f453ebceb8531bc",
+                            "method": "required",
+                            "value": "${ authenticator.enable }"
+                          },
+                          {
+                            "field": "standard_component_select_Aud6cVFHhZV19ov42ls8",
+                            "method": "required",
+                            "value": "${ authenticator.enable }"
+                          },
+                          {
+                            "field": "standard_component_select_0Ri8NMhfYtbbs3uvo8SN",
+                            "method": "required",
+                            "value": "${ authenticator.enable }"
+                          },
+                          {
+                            "field": "standard_component_select_0zBv9Cf4m2wJI1FyxlQD",
+                            "method": "show",
+                            "value": "'${ authenticator.type }' === 'otp' ? true : false"
+                          },
+                          {
+                            "field": "standard_component_select_Aud6cVFHhZV19ov42ls8",
+                            "method": "show",
+                            "value": "'${ authenticator.type }' === 'otp'  ? true : false"
+                          },
+                          {
+                            "field": "standard_component_select_0Ri8NMhfYtbbs3uvo8SN",
+                            "method": "show",
+                            "value": "'${ authenticator.type }' === 'otp'  ? true : false"
+                          },
+                          {
+                            "field": "standard_component_input_750b3f453ebceb8531bc",
+                            "method": "show",
+                            "value": " '${ authenticator.type }' !== 'otp'  ? true : false "
+                          }
+                        ]
+                      }
+                    ],
+                    []
+                  ]
+                }
+              },
+              {
+                "key": "1c362201cf4c5907343b",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_6db3a7c7d9769e34645f",
+                        "key": "type",
+                        "label": "Authenticator Type",
+                        "required": false,
+                        "default_value": "application",
+                        "link_type": "key",
+                        "entity": "custom",
+                        "options": [
+                          "application",
+                          "otp"
+                        ],
+                        "mode": "single",
+                        "trigger": [
+                          {
+                            "field": "standard_component_select_0Ri8NMhfYtbbs3uvo8SN",
+                            "method": "show",
+                            "value": "'${ authenticator.type }' === 'otp' ? true : false"
+                          },
+                          {
+                            "field": "standard_component_select_Aud6cVFHhZV19ov42ls8",
+                            "method": "show",
+                            "value": "'${ authenticator.type }' === 'otp' ? true : false"
+                          },
+                          {
+                            "field": "standard_component_select_0zBv9Cf4m2wJI1FyxlQD",
+                            "method": "show",
+                            "value": "'${ authenticator.type }' === 'otp' ? true : false"
+                          },
+                          {
+                            "field": "standard_component_input_750b3f453ebceb8531bc",
+                            "method": "show",
+                            "value": " '${ authenticator.type }' !== 'otp' ? true : false "
+                          }
+                        ]
+                      },
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_Aud6cVFHhZV19ov42ls8",
+                        "key": "sms_template",
+                        "label": "SMS Template",
+                        "required": false,
+                        "link_type": "key",
+                        "entity": "other_entity",
+                        "entity_system": true,
+                        "key_value": "code",
+                        "display_template": "${ name }",
+                        "list_template": "",
+                        "options": [],
+                        "relate_ref": "template",
+                        "mode": "single",
+                        "filters": [
+                          {
+                            "field": "type",
+                            "condition": "is",
+                            "value": "sms",
+                            "field_data": {
+                              "type": "options"
+                            }
+                          }
+                        ],
+                        "trigger": []
+                      }
+                    ],
+                    [
+                      {
+                        "field": "input",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_750b3f453ebceb8531bc",
+                        "key": "app_name",
+                        "label": "App Name",
+                        "required": false,
+                        "link_type": "key",
+                        "entity": "not_use",
+                        "input_type": "single_line",
+                        "trigger": []
+                      },
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_0zBv9Cf4m2wJI1FyxlQD",
+                        "key": "default_gateway",
+                        "label": "Default Gateway",
+                        "required": false,
+                        "default_value": "email",
+                        "link_type": "key",
+                        "entity": "custom",
+                        "options": [
+                          "email",
+                          "sms"
+                        ],
+                        "mode": "single",
+                        "trigger": []
+                      },
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_0Ri8NMhfYtbbs3uvo8SN",
+                        "key": "email_template",
+                        "label": "Email Template",
+                        "required": false,
+                        "link_type": "key",
+                        "entity": "other_entity",
+                        "entity_system": true,
+                        "key_value": "code",
+                        "display_template": "${ name }",
+                        "list_template": "",
+                        "options": [],
+                        "relate_ref": "template",
+                        "mode": "single",
+                        "filters": [
+                          {
+                            "field": "type",
+                            "condition": "is",
+                            "value": "email",
+                            "field_data": {
+                              "type": "options"
+                            }
+                          }
+                        ],
+                        "trigger": [],
+                        "name": "email_template"
+                      }
+                    ]
+                  ]
+                }
+              }
+            ],
+            "source_key": "authenticator",
+            "actions": []
+          },
+          {
+            "source_key": "recaptcha",
+            "title": "Recaptcha",
+            "actions": [],
+            "blocks": [
+              {
+                "key": "06b2394dd2c1b9d30580",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_bed0f50b02e5f748a8fe",
+                        "key": "enable",
+                        "label": "Enable",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": [
+                          {
+                            "field": "standard_component_select_5f2ec4543b6b5e06b3c2",
+                            "method": "required",
+                            "value": "${ recaptcha.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_642e7bdca42a65819c84",
+                            "method": "required",
+                            "value": "${ recaptcha.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_18ffb1cbd14656cbebd2",
+                            "method": "required",
+                            "value": "${ recaptcha.enable }"
+                          }
+                        ]
+                      }
+                    ],
+                    []
+                  ]
+                }
+              },
+              {
+                "key": "61698d8fd4ce01e917b7",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_5f2ec4543b6b5e06b3c2",
+                        "key": "version",
+                        "label": "Version",
+                        "required": false,
+                        "default_value": "2",
+                        "link_type": "key",
+                        "entity": "custom",
+                        "options": [
+                          "2",
+                          "3"
+                        ],
+                        "mode": "single",
+                        "trigger": []
+                      },
+                      {
+                        "field": "input",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_642e7bdca42a65819c84",
+                        "key": "site_key",
+                        "label": "Site Key",
+                        "required": false,
+                        "link_type": "key",
+                        "entity": "not_use",
+                        "input_type": "single_line",
+                        "trigger": []
+                      }
+                    ],
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_888a275e9c4f981c6e61",
+                        "key": "capture_ip_address",
+                        "label": "Capture IP Address",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": []
+                      },
+                      {
+                        "field": "input",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_18ffb1cbd14656cbebd2",
+                        "key": "secret_key",
+                        "label": "Secret Key",
+                        "required": false,
+                        "link_type": "key",
+                        "input_type": "password",
+                        "trigger": []
+                      }
+                    ]
+                  ]
+                }
+              }
+            ],
+            "key": "6ed3072c667474055ab2"
+          },
+          {
+            "source_key": "otp_setting",
+            "title": "OTP Setting",
+            "actions": [],
+            "blocks": [
+              {
+                "key": "O3qW033hHl2AS6YeMrQI",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_cbfaa33411f2d11b31b4",
+                        "key": "sms_ttl",
+                        "label": "OTP timeout",
+                        "required": true,
+                        "default_value": 60,
+                        "link_type": "key",
+                        "min_value": 1,
+                        "suffix": "secound",
+                        "trigger": [],
+                        "decimal_place": 0,
+                        "name": "sms_ttl"
+                      },
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_11cc22a01dda82776e04",
+                        "key": "sms_enable_universal",
+                        "label": "Enable Universal",
+                        "default_value": false,
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": [],
+                        "name": "sms_enable_universal"
+                      }
+                    ],
+                    [
+                      {
+                        "field": "input",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_153e1ce73a9edad7ae36",
+                        "key": "sms_universal_otp",
+                        "label": "Universal Otp",
+                        "required": true,
+                        "link_type": "key",
+                        "entity": "not_use",
+                        "input_type": "single_line",
+                        "reg_exp_pattern": "^[0-9]{6}$",
+                        "trigger": [],
+                        "name": "sms_universal_otp"
+                      },
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_cbfaa33411f2d11b31b2",
+                        "key": "rate_limit",
+                        "label": "Rate Limit",
+                        "required": true,
+                        "link_type": "key",
+                        "min_value": 0,
+                        "suffix": "seconds",
+                        "trigger": [],
+                        "decimal_place": 0,
+                        "name": "rate_limit"
+                      }
+                    ]
+                  ]
+                }
+              },
+              {
+                "key": "jT05hnHLWZ9E977ErTFd",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [],
+                    []
+                  ]
+                }
+              }
+            ],
+            "key": "o76ujiUg5OKHupm7twhR"
+          },
+          {
+            "source_key": "activate_account",
+            "title": "Activate Account",
+            "actions": [],
+            "blocks": [
+              {
+                "key": "v4JdH4roNx38QyKQchom",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_11cc22a01dda82776f74",
+                        "key": "send_email",
+                        "label": "Send Activate Email",
+                        "default_value": false,
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": [],
+                        "name": "send_email"
+                      },
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_1wAJ4X68TTaHarH28rzD",
+                        "key": "default_gateway",
+                        "label": "Default Gateway",
+                        "required": true,
+                        "default_value": "email",
+                        "link_type": "key",
+                        "entity": "custom",
+                        "options": [
+                          "email",
+                          "sms"
+                        ],
+                        "mode": "single",
+                        "trigger": []
+                      }
+                    ],
+                    [
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_2515f923008c80fc48d1",
+                        "key": "activate_email_template",
+                        "label": "Activate Email Template",
+                        "required": true,
+                        "link_type": "key",
+                        "entity": "other_entity",
+                        "entity_system": true,
+                        "key_value": "code",
+                        "display_template": "${ name }",
+                        "list_template": "",
+                        "options": [],
+                        "relate_ref": "template",
+                        "mode": "single",
+                        "filters": [
+                          {
+                            "field": "type",
+                            "condition": "is",
+                            "value": "email",
+                            "field_data": {
+                              "type": "options"
+                            }
+                          }
+                        ],
+                        "trigger": [],
+                        "name": "activate_email_template"
+                      }
+                    ]
+                  ]
+                }
+              },
+              {
+                "key": "CGiD3cc0bJB7Zryx59Q2",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_14bd5b73c3880d8bb5fb",
+                        "key": "sms_template",
+                        "label": "SMS Template",
+                        "required": true,
+                        "link_type": "key",
+                        "entity": "other_entity",
+                        "entity_system": true,
+                        "key_value": "code",
+                        "display_template": "${ name }",
+                        "list_template": "",
+                        "options": [],
+                        "relate_ref": "template",
+                        "mode": "single",
+                        "filters": [
+                          {
+                            "field": "type",
+                            "condition": "is",
+                            "value": "sms",
+                            "field_data": {
+                              "type": "options"
+                            }
+                          }
+                        ],
+                        "trigger": []
+                      }
+                    ],
+                    [
+                      {
+                        "field": "select",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_select_2515f923008c80fc46e2",
+                        "key": "email_template",
+                        "label": "Email Template",
+                        "required": true,
+                        "link_type": "key",
+                        "entity": "other_entity",
+                        "entity_system": true,
+                        "key_value": "code",
+                        "display_template": "${ name }",
+                        "list_template": "",
+                        "options": [],
+                        "relate_ref": "template",
+                        "mode": "single",
+                        "filters": [
+                          {
+                            "field": "type",
+                            "condition": "is",
+                            "value": "email",
+                            "field_data": {
+                              "type": "options"
+                            }
+                          }
+                        ],
+                        "trigger": [],
+                        "name": "email_template"
+                      }
+                    ]
+                  ]
+                }
+              }
+            ],
+            "key": "Mt9VNd4V8hVq98vQckQ0"
+          }
+        ]
+      },
+      {
+        "key": "e909d46de6171de6546f",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_4eee7ffcb45dae7b41f7",
+                "entity": "test_setting",
+                "format": "<p><br></p><h3>Methods</h3>"
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "e86241d834fac3bfda29",
+        "type": "collapse",
+        "allow_add": false,
+        "data_source": "",
+        "body": [
+          {
+            "title": "Local",
+            "key": "6e7fe61b76c672cf6d74",
+            "blocks": [
+              {
+                "key": "43790b5ecfc448b6be44491",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_a26c563fabf3fe68890a",
+                        "key": "enable",
+                        "label": "Enable",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": [
+                          {
+                            "field": "standard_component_select_d9eaf72b0160a758d150",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_select_002f2e9997c14e1fc589",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_entity_layout_f13e44643b4016da8215",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_a1f96ce6d5af5e332c58",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_1ebb195a6ceeb91b4a12",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_9fe0ee075d1d832fb6a5",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_734abbecc2c8b78b8985",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_896d40ba7c1a77c358a8",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_82ffaf7e3421ee18a52d",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_1df1a6bc6dea36f3de2a",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_0350cc557982fae53b4f",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_d341ad497c7810ea6526",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          },
+                          {
+                            "field": "standard_component_input_number_5c5669785cfa8acefcc1",
+                            "method": "required",
+                            "value": "${ local.enable }"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_e0759b4f5ffa18d59e79",
+                        "key": "allow_registration",
+                        "label": "Allow Registration Process",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "read_only": false,
+                        "trigger": []
+                      }
+                    ]
+                  ]
+                }
+              },
+              {
+                "key": "2895a0fb6965426aa638a",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_a26c563fkiswfe68890a",
+                        "key": "remember",
+                        "label": "Remember",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": []
+                      }
+                    ],
+                    []
+                  ]
+                }
+              },
+              {
+                "key": "4c8c83d501a2cd47e57c",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "entity_layout",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_entity_layout_f13e44643b4016da8215",
+                        "key": "change_expired_password_form",
+                        "label": "Change Expired Password Form",
+                        "required": false,
+                        "link_type": "key",
+                        "entity": "other_entity",
+                        "relate_ref": "user",
+                        "trigger": []
+                      },
+                      {
+                        "field": "input",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_1ebb195a6ceeb91b4a12",
+                        "key": "expires_in",
+                        "label": "Expire in",
+                        "description": "minutes(m), hours(h), days(d), weeks(w)",
+                        "required": false,
+                        "link_type": "key",
+                        "entity": "not_use",
+                        "input_type": "single_line",
+                        "trigger": []
+                      }
+                    ],
+                    [
+                      {
+                        "field": "input",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_a1f96ce6d5af5e332c58",
+                        "key": "secret_key",
+                        "label": "Secret Key",
+                        "required": false,
+                        "link_type": "key",
+                        "input_type": "password",
+                        "trigger": []
+                      }
+                    ]
+                  ]
+                }
+              },
+              {
+                "key": "c872daf0f067325ae62d",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "switch",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_switch_e5f6b85c5d9751bba31e",
+                        "key": "password_policy_complexity_require",
+                        "label": "Password must meet complexity requirements",
+                        "link_type": "key",
+                        "yes_label": "Yes",
+                        "no_label": "No",
+                        "trigger": []
+                      }
+                    ],
+                    []
+                  ]
+                }
+              },
+              {
+                "key": "816c277a1736b04abf9d",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_9fe0ee075d1d832fb6a5",
+                        "key": "password_policy_min_password_age",
+                        "label": "Minimum password age",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 1,
+                        "suffix": "days",
+                        "trigger": [],
+                        "decimal_place": 0
+                      },
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_896d40ba7c1a77c358a8",
+                        "key": "password_policy_min_password_length",
+                        "label": "Minimum password length",
+                        "required": false,
+                        "default_value": 6,
+                        "link_type": "key",
+                        "min_value": 6,
+                        "trigger": [],
+                        "decimal_place": 0
+                      }
+                    ],
+                    [
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_734abbecc2c8b78b8985",
+                        "key": "password_policy_max_password_age",
+                        "label": "Maximum password age",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 1,
+                        "suffix": "days",
+                        "trigger": [],
+                        "decimal_place": 0
+                      },
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_82ffaf7e3421ee18a52d",
+                        "key": "password_policy_enforce_password_history",
+                        "label": "Enforce password history",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 0,
+                        "suffix": "passwords remembered",
+                        "trigger": [],
+                        "decimal_place": 0
+                      }
+                    ]
+                  ]
+                }
+              },
+              {
+                "key": "2f8d466f3ff82cfd9d6a",
+                "type": "column",
+                "layout": {
+                  "num_of_col": 2,
+                  "fields": [
+                    [
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_1df1a6bc6dea36f3de2a",
+                        "key": "lockout_policy_threshold",
+                        "label": "Account lockout threshold",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 0,
+                        "suffix": "invalid logon attempts",
+                        "trigger": [],
+                        "decimal_place": 0
+                      },
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_d341ad497c7810ea6526",
+                        "key": "lockout_policy_reset_counter",
+                        "label": "Reset account lockout counter after",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 0,
+                        "suffix": "minutes",
+                        "trigger": [],
+                        "decimal_place": 0
+                      }
+                    ],
+                    [
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_0350cc557982fae53b4f",
+                        "key": "lockout_policy_duration",
+                        "label": "Account lockout duration",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 0,
+                        "suffix": "minutes",
+                        "trigger": [],
+                        "decimal_place": 0
+                      },
+                      {
+                        "field": "input_number",
+                        "type": "standard_component",
+                        "unique_key": "standard_component_input_number_5c5669785cfa8acefcc1",
+                        "key": "lockout_policy_unused_suspended",
+                        "label": "Suspended accounts that have not been unused",
+                        "required": false,
+                        "link_type": "key",
+                        "min_value": 0,
+                        "suffix": "days",
+                        "trigger": [],
+                        "decimal_place": 0
+                      }
+                    ]
+                  ]
+                }
+              }
+            ],
+            "source_key": "local",
+            "actions": []
+          }  
+        ]
+      }
+    ],
+    "redirect_mode": "not_redirect"
+  },
+  "name": "Security",
+  "code": "security",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "auth"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

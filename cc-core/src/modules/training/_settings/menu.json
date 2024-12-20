@@ -1,0 +1,69 @@
+[{
+    "name": "Settings",
+    "description": "",
+    "icon": "/demo/setting.svg",
+    "module": "demo",
+    "permission_key": "setting",
+    "layout": "setting",
+    "form_filters": [],
+    "restrict_roles": [],
+    "allow_setting": true,
+    "menu": [{
+            "name": "Product",
+            "icon": "Package",
+            "horizontal": false,
+            "menu_type": "entity",
+            "entity_name": "training_product",
+            "layout": "default",
+            "restrict_roles": [],
+            "icon_type": "system",
+            "key": "8b916d43de9845f4e6ae"
+        },
+        {
+            "name": "Order",
+            "icon": "FileText",
+            "horizontal": false,
+            "menu_type": "entity",
+            "entity_name": "training_order",
+            "layout": "default",
+            "restrict_roles": [],
+            "icon_type": "system",
+            "key": "9f2677d36a8d7a9708db"
+        },
+        {
+            "name": "Customer",
+            "icon": "Users",
+            "horizontal": false,
+            "menu_type": "entity",
+            "entity_name": "training_customer",
+            "layout": "default",
+            "restrict_roles": [],
+            "icon_type": "system",
+            "key": "6ca418a80af3d07fc4b4"
+        },
+        {
+            "name": "Payment",
+            "icon": "ShoppingBag",
+            "description": "payment",
+            "horizontal": false,
+            "menu_type": "entity",
+            "entity_name": "training_payment",
+            "layout": "default",
+            "restrict_roles": [],
+            "icon_type": "system",
+            "key": "644856ce47b5195911ea"
+        }
+    ],
+    "menu_setting": {
+        "text_color": "#333333",
+        "text_active_color": "#ffffff",
+        "title_color": "#333333",
+        "icon_collaps_color": "#ff5a4b",
+        "active_color": "#666666",
+        "submenu_open_text_color": "#333333",
+        "submenu_open_background_color": "#eeeeee",
+        "background_color": "#ffffff",
+        "divider_background_color": "#f0f0f0",
+        "background_color_menu_lv4": "#ffffff"
+    }
+}]

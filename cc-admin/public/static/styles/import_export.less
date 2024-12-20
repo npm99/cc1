@@ -1,0 +1,62 @@
+.ant-drawer.import-export {
+  .ant-drawer-content-wrapper {
+    width: 450px !important;
+
+    .ant-drawer-wrapper-body {
+      .ant-drawer-title {
+        svg {
+          margin-right: 6px;
+        }
+      }
+
+      .ant-drawer-body {
+        padding: 24px 0px;
+
+        .title-type {
+          margin-bottom: 15px;
+          padding: 0px 24px;
+        }
+
+        .import-export-content {
+          margin-bottom: 3px;
+          padding: 8px 24px;
+
+          .left-section {
+            .ant-typography {
+              line-height: 32px;
+            }
+          }
+        }
+
+        h3.ant-typography {
+          color: @success-color;
+        }
+
+        .progress {
+          padding: 0px 24px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.ant-modal.import-export {
+  .ant-modal-body {
+    .progress {
+      padding: 10px 0px;
+
+      button {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  .ant-drawer.import-export {
+    .ant-drawer-content-wrapper {
+      width: 85% !important;
+    }
+  }
+}

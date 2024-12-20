@@ -1,0 +1,25 @@
+{
+  "type": "column",
+  "layout": {
+    "num_of_col": 6,
+    "fields": [
+      [
+        {
+          "field": "switch",
+          "type": "standard_component",
+          "key": "manage_setting",
+          "label": "Manage Settings",
+          "default_value": false,
+          "link_type": "key",
+          "yes_label": "Yes",
+          "no_label": "No"
+        }
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  }
+}

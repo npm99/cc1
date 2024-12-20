@@ -1,0 +1,241 @@
+@import "custom-antd.less";
+
+.layout-login {
+    background-color: #ffffff;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.logo-layout {
+    padding: 0rem 4rem;
+    justify-content: center;
+    display: flex;
+
+    .logo-content {
+        width: 100%;
+    }
+}
+
+.logo-layout-v3 {
+    justify-content: center;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-layout {
+        padding: 0rem 1rem;
+        width: 100%;
+    }
+    .logo-layout-v3 {
+        padding: 0rem 1rem;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .logo-layout {
+        padding: 0rem 4rem;
+        width: 100%;
+    }
+    .logo-layout-v3 {
+        padding: 0rem 4rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .logo-layout {
+        padding: 0rem 4rem;
+        justify-content: center;
+        display: flex;
+
+        .logo-content {
+            width: 100%;
+        }
+    }
+}
+
+.login-form {
+    overflow-y: hidden;
+    padding: 1.5rem;
+    border-radius: @border-radius-base;
+
+    .form-login-authentication {
+        margin-bottom: 15px;
+    }
+
+    .image-center {
+        max-width: 100%;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    h3.ant-typography {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    a.ant-typography {
+        color: @info-color;
+    }
+
+    .ant-btn-google,
+    .ant-btn-cognito,
+    .ant-btn-azure-ad,
+    .ant-btn-social {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 20px;
+            width: auto;
+            margin-right: 10px;
+            margin-top: 1px;
+        }
+    }
+
+    .ant-btn-id-connect {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 20px;
+            width: auto;
+            margin-right: 10px;
+            margin-top: 1px;
+        }
+    }
+
+    .ant-dropdown-trigger.languages {
+        .anticon {
+            display: none;
+        }
+    }
+}
+
+.login-modal {
+    max-width: 500px !important;
+
+    .description {
+        margin-top: 10px;
+    }
+
+    .button {
+        margin-top: 15px;
+    }
+
+    .qrcode-description {
+        margin-bottom: 20px;
+    }
+
+    .qrcode-container {
+        padding: 20px 50px 10px;
+    }
+
+    .modal-container {
+        padding: 20px 50px 40px;
+    }
+
+    .modal-flow-container {
+        padding: 20px;
+
+        .login-form {
+            padding: 0px;
+        }
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 50px;
+    }
+
+    .modal-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .login-otp-container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            margin-top: 14px;
+        }
+
+        input {
+            width: 35px !important;
+            max-width: 100%;
+            text-align: center;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #979797;
+            font-size: 22px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000000;
+            outline: none;
+            border-radius: 0;
+            padding: 0;
+
+            &.active,
+            &:focus {
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 2px solid black !important;
+            }
+        }
+
+        input:disabled,
+        input[disabled] {
+            border-bottom: 2px #979797 solid;
+            background-color: #ffffff;
+
+            &.active {
+                border-bottom: 2px black solid;
+            }
+        }
+    }
+}
+
+.forgot-password-description {
+    color: black;
+    text-align: "center";
+}
+
+.forgot-password-title {
+  margin-top : 0;
+  padding-top: 0;
+  text-align : center;
+}
+
+.login-input {
+  .ant-input {
+    height: 44px;
+    font-size: 16px;
+  }  
+}
+
+.login-input-password {
+  .ant-input-password {
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+.button_login {
+  height:  44px;
+  font-size: 16px;
+}

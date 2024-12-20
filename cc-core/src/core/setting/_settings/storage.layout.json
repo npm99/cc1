@@ -1,0 +1,158 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "4519096f7e240dfccabb",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_64f9fdcec14ee7588294",
+                "key": "provider",
+                "label": "Provider",
+                "required": true,
+                "default_value": "local",
+                "link_type": "key",
+                "entity": "custom",
+                "options": [],
+                "mode": "single",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_a9b7fab99bc03d575064",
+                "key": "limit_file_size",
+                "label": "Limit File Size",
+                "required": true,
+                "default_value": 10,
+                "link_type": "key",
+                "min_value": 1,
+                "suffix": "MB",
+                "trigger": [],
+                "decimal_place": 0
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "25c2ae93963e82af8eac",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_3f755cb598943ceaa947",
+                "key": "allow_extension_file",
+                "label": "Allow Extension File",
+                "required": true,
+                "default_value": [
+                  "pdf",
+                  "xlsx",
+                  "xls",
+                  "csv",
+                  "doc",
+                  "txt",
+                  "jpg",
+                  "png",
+                  "gif",
+                  "iso",
+                  "zip",
+                  "exe",
+                  "json",
+                  "bin",
+                  "xml",
+                  "deb",
+                  "gz"
+                ],
+                "link_type": "key",
+                "entity": "custom",
+                "options": [],
+                "mode": "tags",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_KNvkDcpBUVP83JtEBvfG",
+                "key": "allow_image_extension_file",
+                "label": "Allow Image Extension File",
+                "required": true,
+                "default_value": [
+                  "jpeg",
+                  "jpg",
+                  "gif",
+                  "png"
+                ],
+                "link_type": "key",
+                "entity": "custom",
+                "options": [],
+                "mode": "tags",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "uh43ldy2q36h2vsk5rul",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_8nrv8onfikvxy0ee7g5o",
+                "key": "api_domain",
+                "label": "API Domain",
+                "required": true,
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": []
+              }
+            ],
+            []
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "not_redirect"
+  },
+  "name": "Storage",
+  "code": "storage",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "media"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

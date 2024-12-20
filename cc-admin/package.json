@@ -1,0 +1,24 @@
+{
+    "name": "cc-admin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "node index",
+        "build": "next build",
+        "postinstall": "node post-install.js",
+        "production": "NODE_OPTIONS='-r @newrelic/next' node index",
+        "analyze": "cross-env ANALYZE=true next build",
+        "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+        "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@shopstack/cc-admin-lib": "^2.5.192"
+    },
+    "devDependencies": {
+        "identity-obj-proxy": "^3.0.0",
+        "webpack-bundle-analyzer": "^4.3.0"
+    }
+}

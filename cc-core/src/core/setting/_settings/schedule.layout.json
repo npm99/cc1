@@ -1,0 +1,132 @@
+{
+  "name": "Schedule Action",
+  "code": "schedule_action",
+  "type": [
+    "form"
+  ],
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "b2011b040e3d13cb22a0",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "switch",
+                "type": "standard_component",
+                "unique_key": "standard_component_switch_fdbf631109fd402c3f7f",
+                "key": "enabled",
+                "label": "Enabled",
+                "default_value": true,
+                "link_type": "key",
+                "yes_label": "Yes",
+                "no_label": "No",
+                "trigger": [],
+                "name": "enabled"
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "462312ed93fe6be3f1ff",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "switch",
+                "type": "standard_component",
+                "unique_key": "standard_component_switch_e018a50813b16114f566",
+                "key": "status",
+                "label": "Is Running",
+                "link_type": "key",
+                "yes_label": "Yes",
+                "no_label": "No",
+                "read_only": true,
+                "trigger": [],
+                "_translates": {
+                  "en-US": {
+                    "label": "",
+                    "placeholder": "",
+                    "description": ""
+                  },
+                  "th-TH": {
+                    "label": "Is Running",
+                    "placeholder": "",
+                    "description": ""
+                  },
+                  "id-ID": {
+                    "label": "",
+                    "placeholder": "",
+                    "description": ""
+                  }
+                }
+              }
+            ],
+            [
+              {
+                "field": "date_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_date_picker_6ff912c1491d7d698fdb",
+                "key": "last_execute_time",
+                "label": "Last execute time",
+                "link_type": "key",
+                "read_only": true,
+                "trigger": [],
+                "_translates": {
+                  "en-US": {
+                    "label": "",
+                    "placeholder": "",
+                    "description": ""
+                  },
+                  "th-TH": {
+                    "label": "Last execute time",
+                    "placeholder": "",
+                    "description": ""
+                  },
+                  "id-ID": {
+                    "label": "",
+                    "placeholder": "",
+                    "description": ""
+                  }
+                },
+                "date_type": "datetime"
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "not_redirect"
+  },
+  "_custom_actions": [
+    {
+      "system": true,
+      "name": "Restart",
+      "enabled": true,
+      "allow_layouts": [
+        "schedule_action"
+      ],
+      "type": "internal",
+      "show_on": "detail",
+      "export_filter": false,
+      "confirm": true,
+      "internal_actions": [
+        {
+          "path": "/schedule_action/restart",
+          "method": "patch"
+        }
+      ]
+    }
+  ],
+  "allow_actions": [],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

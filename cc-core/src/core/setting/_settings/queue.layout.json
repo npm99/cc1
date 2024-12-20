@@ -1,0 +1,63 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "7c0f1cf1dd32864afcf9",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_c835ed4c19182c15034d",
+                "key": "maximum_execute_time",
+                "label": "Maximum Execute Time",
+                "description": "",
+                "required": true,
+                "default_value": 30,
+                "link_type": "key",
+                "prefix": "",
+                "suffix": "minute",
+                "trigger": [],
+                "_translates": {
+                  "en-US": {
+                    "label": "Maximum Execute Time",
+                    "placeholder": "",
+                    "description": ""
+                  }
+                },
+                "decimal_place": 0
+              }
+            ],
+            []
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "not_redirect"
+  },
+  "name": "Queue",
+  "code": "queue",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

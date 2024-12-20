@@ -1,0 +1,323 @@
+@import "custom-antd.less";
+
+
+.multiple-date-time-picker {
+    
+    .icon-input-remove {
+        display: none;
+    }
+
+    .rmdp-container {
+        width: 100%;
+        min-height: 32px;     
+    }
+
+    input {
+        width: 100%;
+        height: auto;
+        padding: 4px 11px 4px;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #c2bfbf;
+      }
+
+      .icon-input {
+        color: #c2bfbf;
+        cursor:text;
+      } 
+      
+        .ant-input-affix-wrapper .ant-input-suffix {
+            padding-right: 0px !important;
+        }          
+} 
+
+.custom-date-panel {
+    min-width: 120px;
+    // border-left: 1px solid #cfd8e2;    
+}
+
+.custom-time-picker {
+    border-right: 1px solid #cfd8e2;
+}
+
+.cc-custom-time-picker {
+    border-right: 1px solid #cfd8e2;
+    border-bottom: 1px solid #cfd8e2;
+    .dvdr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -5px;
+    }
+}
+
+.cc-time-picker {
+    display: flex;
+    padding: 3px 0;
+    min-width: 120px;    
+    max-height: 100px;
+   
+    .box-time {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .cc-arrow-container {
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        margin: 0 5px;
+        padding: 0;
+        width: 20px;
+    }
+
+    .cc-icon-up {
+        i {
+            margin-top: 7px;    
+            -webkit-transform: rotate(-135deg);
+        }        
+    }
+
+    .cc-icon-down {
+        margin-top: 3px;    
+        -webkit-transform: rotate(45deg);
+    }
+
+    .cc-time-arrow {
+        border: solid #0074d9;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        height: 3px;
+        margin-top: 5px;
+        padding: 2px;
+        width: 3px;
+    }
+
+    .cc-time-input {
+        border: none;
+        flex-grow: 1;
+        font-size: 14px;
+        padding: 5px 2px;
+        text-align: center;
+        width: 20px;
+    }    
+}
+
+.cc-select-date {
+    margin: 10px;
+}
+
+.cc-custom-time-picker-footer {
+    align-items: center;
+    padding: 8px 10px 10px 8px;
+    .button-now {
+        cursor: pointer;
+    }
+}
+
+.cc-picker-time-panel {
+    width: auto;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #cfd8e2;
+
+    .cc-picker-header-view {
+        border-bottom: 1px solid #cfd8e2;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .cc-picker-content {
+        display: flex;
+        flex: auto;
+        height: 224px;
+
+        .cc-picker-time-panel-column:not(:first-child) {
+            border-left: 1px solid #cfd8e2;
+        }
+
+        .cc-picker-time-panel-column::after {
+            display: block;            
+            min-height: 224px;
+            content: '';
+        }
+
+        .cc-picker-time-panel-column {
+            flex: 1 0 auto;
+            width: 56px;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            text-align: left;
+            list-style: none;
+            transition: background 0.3s;
+            border-collapse: collapse;
+                        
+            .cc-picker-time-panel-item{
+                
+                .cc-picker-time-panel-cell-inner {
+                    display: flex;
+                    width: 100%;
+                    height: 28px;
+                    margin: 0;
+                    // padding: 0 0 0 14px;                    
+                    line-height: 28px;                    
+                    cursor: pointer;
+                    justify-content: center
+                }
+            }
+        }
+    }
+}
+
+.custom-plugins-time-picker {
+    .cc-plugins-time-rows {
+        display: flex;
+        border-bottom: 1px solid #cfd8e2;
+    }
+
+    .cc-plugins-panel-column {
+     min-width: 125px;
+     width: 100%;
+    }
+
+    .rmdp-panel-body {
+        min-height: 224px;
+    }
+}
+
+.custom-date-picker {
+    .rmdp-week {
+        .rmdp-week-day {
+            color: unset;
+        }
+    }
+
+    .rmdp-calendar {
+        height: unset;
+        padding : 0px;
+    }
+
+    .rmdp-header {
+        border-bottom: 1px solid #cfd8e2;
+    }
+
+    .rmdp-day.rmdp-selected span:not(.highlight) {
+        background-color: @primary-color !important;
+        box-shadow: 0 0 3px @primary-color;
+        color: @btn-default-bg;                
+    }
+
+    .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+        background-color: @hover-color;
+        color: #fff;
+    }
+    .rmdp-header-values {
+        color: @text-color;
+    }
+}
+
+.cc-picker-time-panel-column > li.ant-picker-time-panel-cell-selected .cc-picker-time-panel-cell-inner {
+    background-color: @primary-color;    
+    opacity: .4;
+}
+
+.cc-picker-time-panel-column > li.cc-picker-time-panel-cell-disabled .cc-picker-time-panel-cell-inner {
+    color: rgba(0, 0, 0, 0.25);
+    background-color: transparent !important;
+}
+
+
+.cc-picker-time-panel .cc-picker-content .cc-picker-time-panel-column .cc-picker-time-panel-item .cc-picker-time-panel-cell-inner {
+    display: flex;
+    width: 100%;
+    height: 28px;
+    margin: 0;
+    line-height: 28px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.cc-picker-time-panel-column > li.ant-picker-time-panel-cell-selected .cc-picker-time-panel-cell-inner:hover {
+    background: @hover-color;
+}
+
+.cc-picker-time-panel-column .cc-picker-time-panel-cell-inner:hover {
+    background: @hover-color;
+}
+
+.cc-custom-panel{
+    .rmdp-panel-header {
+        margin: unset;
+        border-bottom: 1px solid #cfd8e2;
+        height: 46px;
+        color: @text-color;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .rmdp-panel-body li button {
+        color: @text-color;
+    }
+    .rmdp-panel-body li .b-deselect {
+        background-color: transparent !important;
+    }
+
+    .rmdp-panel-body li, .rmdp-panel-body li.bg-blue {
+        background-color: transparent !important;
+    }
+}
+
+
+.cc-popover-placement {
+    .ant-popover-inner-content  {
+        padding:  0px;
+    }
+
+    .ant-popover-inner-content {
+        min-width: 350px;
+    }
+}
+
+.cc-multiple-date-time-input-tab {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f5f5f5 !important;
+    border: 1px solid #f0f0f0 !important;
+    border-radius: 6px;
+    height: 24px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    margin-right: 3px;
+    font-size: 13px;
+    font-feature-settings: "tnum";
+    font-variant: tabular-nums;
+
+    .icon-remove  {
+        padding-left: 5px;
+        cursor: pointer;
+    }
+}
+
+.multiple-date-time-picker :hover {
+    .icon-input:not(.icon-input-rmpty) {
+        display: none;
+    }
+
+    .icon-input-remove:not(.icon-input-remove-rmpty)  {
+        display: flex;
+    }
+}

@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+    cc-admin:
+        build:
+            context: .
+        image: cc-admin
+        container_name: cc-admin
+        restart: always
+        env_file: .env
+        ports:
+            - "4000:4000"

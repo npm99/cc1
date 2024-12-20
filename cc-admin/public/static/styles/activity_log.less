@@ -1,0 +1,157 @@
+.modal-activity-log-default-profile {
+  svg {
+    width : 100px;
+    height: 100px;
+  }
+}
+
+#log_setting_form {
+  .ant-form-item-has-feedback .ant-switch {
+    margin: 0
+  }
+}
+
+.activity-log-button {
+  color: rgb(102, 0, 255);
+
+  &.ant-btn {
+    border: 1px solid rgb(102, 0, 255);
+  }
+
+  &.ant-btn:hover,
+  &.ant-btn:focus {
+    border: 1px solid rgb(102, 0, 255);
+  }
+}
+
+.ant-drawer.activity-log {
+
+
+  .ant-drawer-content-wrapper {
+    width: 450px !important;
+
+    .ant-drawer-wrapper-body {
+      .ant-drawer-title {
+        .refresh {
+          svg {
+            width       : 16px;
+            height      : 16px;
+            margin-right: 0px;
+          }
+        }
+
+        svg {
+          width       : 16px;
+          height      : 16px;
+          margin-right: 6px;
+        }
+      }
+
+      .ant-drawer-body {
+        padding: 24px 0px;
+
+        .ant-divider.ant-divider-horizontal:first-child {
+          display: none;
+        }
+
+        .title-date {
+          margin-bottom: 15px;
+          padding      : 0px 24px;
+        }
+
+        .activity-contents {
+          margin-bottom: 3px;
+          padding      : 8px 24px;
+
+          .left-section {
+            .image {
+              margin-right: 10px;
+              width       : 55px;
+
+              .image-action {
+                text-align: center;
+                margin-top: 3px;
+
+                .ant-avatar-circle {
+                  width        : 38px;
+                  height       : 38px;
+                  margin-bottom: 4px;
+                }
+
+                .anticon-user {
+                  svg {
+                    width : 36px;
+                    height: 36px;
+                  }
+                }
+
+                .action {
+                  font-size: 13px;
+                }
+              }
+            }
+
+            .user-name {
+              font-weight: 500;
+              font-size  : 13px;
+            }
+
+            .ip {
+              font-size: 10px;
+            }
+          }
+
+          .right-section {
+            position  : relative;
+            text-align: right;
+
+            .time {
+              font-size: 12px;
+            }
+
+            .type-log {
+              position: absolute;
+              bottom  : 0;
+              right   : 0;
+
+              .ant-tag {
+                margin-right: 0;
+              }
+            }
+          }
+
+          &.failed {
+            background  : #fff1f0 !important;
+            border-color: #ffa39e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-btn.activity-log {
+  svg {
+    width : 16px;
+    height: 16px;
+  }
+}
+
+.ant-list-split.activity-log-diff-list {
+  .ant-list-item {
+    border-bottom: none;
+    padding: 6px 0;
+  }
+
+  .list-item-container {
+    display: block;
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  .ant-drawer.activity-log {
+    .ant-drawer-content-wrapper {
+      width: 85% !important;
+    }
+  }
+}

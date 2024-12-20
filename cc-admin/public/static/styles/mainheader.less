@@ -1,0 +1,32 @@
+@import "custom-antd.less";
+
+.ant-popover.ant-popover-placement-bottomRight {
+  .ant-popover-inner-content {
+    padding: 0;
+
+    .menu-header-account.ant-menu-vertical {
+      border-right : none;
+      border-radius: 5px;
+      box-shadow   : 0 18px 35px rgba(50, 50, 93, .1), -1px 0 15px rgba(0, 0, 0, .07);
+
+      .ant-menu-item {
+        margin: 0;
+        &:first-child {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+        &:last-child {
+          border-top: 1px solid @border-color-split;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+  }
+    .sub-menu-sider {
+     .ant-menu-submenu:hover>.ant-menu-submenu-title>.ant-menu-submenu-arrow {
+          color: @menu-item-group-title-color !important;
+        }
+    } 
+    
+}

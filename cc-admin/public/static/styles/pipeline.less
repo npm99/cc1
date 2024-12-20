@@ -1,0 +1,84 @@
+@import "custom-antd.less";
+
+.pipeline-card {
+    border: 1px solid @border-color-split !important;
+    border-radius: 5px;
+
+    .pipeline-main {                
+        height: 720px;
+        display: flex;
+
+        .pipeline-column-one {
+            border-right: 1px solid @border-color-split !important;
+            padding: 15px;
+            padding-right: 0px;
+            padding-left: 0px;
+            
+            .pipeline-react-flow {
+                width: 230px;
+                height: 685px;                
+            }
+
+            .pipeline-add-item {
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                z-index: 9999;
+                border-radius: 0px;
+                border: unset;
+                width: 100%;
+            }
+        }
+
+        .pipeline-column-two {
+            padding: 15px;
+            overflow: scroll;
+            height: 720px;
+            flex: 1;
+        }
+        
+        .pipeline-icon-add {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            z-index: 9999;        
+            border-radius: 0px;
+        }
+    }
+
+    .custom-edge-react-flow-edge-path { 
+        stroke-width: 1;
+        fill: none;
+    }
+
+    .edgebutton-body {
+        align-items: center;
+        background: transparent;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        min-height: 40px;
+        width: 40px;
+        .edgebutton {            
+            border : none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            height: 30px;
+            line-height: 1;
+            width: 30px;
+        }
+    }   
+
+}
+
+.pipeline-layout-detail {
+
+    .pipeline-layout-detail-button {
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }    
+}

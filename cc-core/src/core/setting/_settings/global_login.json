@@ -1,0 +1,217 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "c80f903d6fdaafbd0f65",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "file",
+                "type": "standard_component",
+                "unique_key": "standard_component_file_8c0994a927cb0a026b92",
+                "key": "global.default_profile",
+                "label": "Default Profile",
+                "link_type": "key",
+                "trigger": [],
+                "allow_extensions": [
+                  "png",
+                  "jpeg",
+                  "jpg",
+                  "svg"
+                ],
+                "path_file": "system/global_setting/profile",
+                "is_public": true
+              }
+            ],
+            [
+              {
+                "field": "entity_layout",
+                "type": "standard_component",
+                "unique_key": "standard_component_entity_layout_697ce53c3836353d0582",
+                "key": "global.my_profile_form",
+                "label": "My Profile Form",
+                "required": true,
+                "link_type": "key",
+                "entity": "other_entity",
+                "relate_ref": "user",
+                "trigger": []
+              },
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_bc64401b16c5e6846dd4",
+                "key": "global.my_profile_format",
+                "label": "My Profile Format",
+                "link_type": "key",
+                "entity": "other_entity",
+                "input_type": "single_line",
+                "relate_ref": "user",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "6d7ed53df747852a5189",
+        "type": "column",
+        "layout": {
+          "num_of_col": 3,
+          "fields": [
+            [
+              {
+                "field": "radio",
+                "type": "standard_component",
+                "unique_key": "standard_component_radio_242dbf739e9d854b3744",
+                "key": "login.layout",
+                "label": "Layout",
+                "required": true,
+                "link_type": "key",
+                "options": [
+                  {
+                    "label": "setting.theme_layout.login_layout_v1",
+                    "value": "v1"
+                  },
+                  {
+                    "label": "setting.theme_layout.login_layout_v2",
+                    "value": "v2"
+                  },
+                  {
+                    "label": "setting.theme_layout.login_layout_v3",
+                    "value": "v3"
+                  }
+                ],
+                "option_type": "button",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_e111455f23c61c6cdfbf",
+                "key": "login.logo_background_color",
+                "label": "Logo Background Color",
+                "required": false,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_e5c3b59576e0d6debd6f",
+                "key": "login.background_color",
+                "label": "Background Color",
+                "required": false,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "fec71ee1a473be569596",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "file",
+                "type": "standard_component",
+                "unique_key": "standard_component_file_0496df53fa2ca5154fe0",
+                "key": "login.logo",
+                "label": "Logo",
+                "required": false,
+                "link_type": "key",
+                "trigger": [],
+                "allow_extensions": [
+                  "png",
+                  "jpg",
+                  "jpeg",
+                  "svg"
+                ],
+                "path_file": "system/general_setting/logo",
+                "max_file_size": 10,
+                "is_public": true
+              }
+            ],
+            [
+              {
+                "field": "file",
+                "type": "standard_component",
+                "unique_key": "standard_component_file_d1d601aa5d22b3ca3d02",
+                "key": "login.background_image",
+                "label": "Background Image",
+                "required": false,
+                "link_type": "key",
+                "trigger": [],
+                "allow_extensions": [
+                  "png",
+                  "jpg",
+                  "jpeg",
+                  "svg"
+                ],
+                "path_file": "system/general_setting/bg",
+                "max_file_size": 10,
+                "is_public": true
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "6f86da399efa24442ec0",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_8affb780c4cbfe1ddb79",
+                "key": "login.background_content",
+                "label": "Background Content",
+                "link_type": "key",
+                "input_type": "wysiwyg",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "refresh"
+  },
+  "name": "Global & Login",
+  "code": "global_login",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

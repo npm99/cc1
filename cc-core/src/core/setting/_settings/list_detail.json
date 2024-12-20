@@ -1,0 +1,658 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "e6127290f7644b3de6dd",
+        "type": "column",
+        "layout": {
+          "num_of_col": 6,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_5d60c19bef62742224f4",
+                "key": "list_detail.primary_color",
+                "label": "Primary Color",
+                "required": false,
+                "link_type": "key",
+                "trigger": [],
+                "allow_color_code": false
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_54f666b6492e54254ffc",
+                "key": "list_detail.hover_color",
+                "label": "Hover Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_color_code": false
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_fa5c48a6e723ed0904a7",
+                "key": "list_detail.table_header_sort_bg",
+                "label": "Table Header Sort Background Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ed9f7a7f83fce9d196f1",
+                "key": "list_detail.group_table_headers_bg",
+                "label": "Table Header Group Background Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ed8i2a7f83fce9d196f1",
+                "key": "list_detail.frame_border_color",
+                "label": "Frame Border Color",
+                "link_type": "key",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_2b630c4dd8fd1d43f52f",
+                "key": "list_detail.font_color",
+                "label": "Font Color",
+                "required": false,
+                "link_type": "key",
+                "trigger": [],
+                "allow_color_code": false
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_e80e136ba6590b1ccfaa",
+                "key": "list_detail.background_color",
+                "label": "Background Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_8afe80f33024eb6ef096",
+                "key": "list_detail.table_body_sort_bg",
+                "label": "Table Body Sort Background Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ed5f7a7f83fce9d196f3",
+                "key": "list_detail.boolean_value_true",
+                "label": "Boolean true value color",
+                "link_type": "key",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_10ddfca4867e5b6b6eb0",
+                "key": "list_detail.action_color",
+                "label": "Action Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_color_code": false
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_1143bd31e6af3b4166ce",
+                "key": "list_detail.table_header_bg",
+                "label": "Table Header Background Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_t4PqXNSVk5c3qz23vydl",
+                "key": "list_detail.table_row_select_color",
+                "label": "Table Row Select Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ed5f7a7f83fce9d196f8",
+                "key": "list_detail.boolean_value_false",
+                "label": "Boolean false value color",
+                "link_type": "key",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_s3yg0kNOespXpFs1FJ6I",
+                "key": "list_detail.select_color",
+                "label": "Select Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_color_code": false
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_f5d7a0943a5fa4c84d89",
+                "key": "list_detail.table_header_color",
+                "label": "Table Header Text Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ed5f7a7f83fce9d196a0",
+                "key": "list_detail.table_row_hover_bg",
+                "label": "Table Row Hover Background Color",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ed8j0a7f83fce9d196f1",
+                "key": "list_detail.frame_bg_color",
+                "label": "Frame Background Color",
+                "link_type": "key",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "aa3dd49c2e6f425e96f6",
+        "type": "column",
+        "layout": {
+          "num_of_col": 3,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_4b5e45f150ffb34a6158",
+                "key": "list_detail.format_date",
+                "label": "Date Format",
+                "description": "Moment format",
+                "required": true,
+                "default_value": "D/MMM/YY",
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": []
+              },
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_2fa76b39aec9ea0569a9",
+                "key": "list_detail.record_per_page",
+                "label": "Record Per Page",
+                "required": true,
+                "default_value": [
+                  "10",
+                  "20",
+                  "50",
+                  "100"
+                ],
+                "link_type": "key",
+                "entity": "custom",
+                "options": [],
+                "mode": "tags",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_21ba78e0559cfaba96ee",
+                "key": "list_detail.format_datetime",
+                "label": "DateTime Format",
+                "description": "Moment format",
+                "required": true,
+                "default_value": "D/MMM/YY h:mm A",
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_fd81ed9966efd0c8489a",
+                "key": "list_detail.format_time",
+                "label": "Time Format",
+                "description": "Moment format",
+                "default_value": "h:mm A",
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "4eba966610bb08f1fcec",
+        "type": "column",
+        "layout": {
+          "num_of_col": 1,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_06e402ade005eb91e307",
+                "label": "Currency",
+                "entity": "test_setting_layout",
+                "format": "<p><br></p><p><strong style=\"font-size: 1.17em;\">Currency</strong><br></p>",
+                "hide_label": true,
+                "show_empty": false
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "b9ff2d5616410cb26f53",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_563d50f529d10b23b6dd",
+                "key": "list_detail.prefix",
+                "label": "Prefix",
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": [],
+                "use_function": false,
+                "name": "prefix"
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_84ec46a8d1ef174c16df",
+                "key": "list_detail.suffix",
+                "label": "Suffix",
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": [],
+                "use_function": false,
+                "name": "suffix"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "7c7e7719e4db3a2eaeb9",
+        "type": "column",
+        "layout": {
+          "num_of_col": 3,
+          "fields": [
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_fc3de00bbf8d0a1fcabd",
+                "key": "list_detail.thousand_separator",
+                "label": "Thousand Separator",
+                "required": true,
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": [],
+                "use_function": false,
+                "name": "thousand_separator",
+                "reg_exp_pattern": "^[^0-9]*$"
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_14fc58cca76df191c0ee",
+                "key": "list_detail.decimal_separator",
+                "label": "Decimal Separator",
+                "required": true,
+                "link_type": "key",
+                "entity": "not_use",
+                "input_type": "single_line",
+                "trigger": [],
+                "use_function": false,
+                "name": "decimal_separator",
+                "reg_exp_pattern": "^[^0-9]*$"
+              }
+            ],
+            [
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_284004fa899555e23ed6",
+                "key": "list_detail.decimal_place",
+                "label": "Decimal Length",
+                "link_type": "key",
+                "trigger": [],
+                "decimal_place": 0,
+                "name": "decimal_place"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "9715c0c6caa059c42bf5",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_fa2aae267ecfd77bb0d9",
+                "label": "Widget",
+                "entity": "test_setting",
+                "format": "<p><br></p><p><strong style=\"font-size: 1.17em;\">Widget</strong><br></p>",
+                "hide_label": true
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "349341a9405a931cad01",
+        "type": "column",
+        "layout": {
+          "num_of_col": 3,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_35b2edc3377077482152",
+                "key": "list_detail.widget_background_color",
+                "label": "Background Color",
+                "required": true,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_75f4af34b7097690a957",
+                "key": "list_detail.widget_border_color",
+                "label": "Border Color",
+                "required": true,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_8171278606874f16efca",
+                "key": "list_detail.widget_bar_color",
+                "label": "Bar Color",
+                "required": true,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "d00c683f5512b036f52c",
+        "type": "column",
+        "layout": {
+          "num_of_col": 4,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_31240a562b517d220f3d",
+                "key": "list_detail.widget_summary_box_background_color",
+                "label": "Summary Box Background Color",
+                "required": true,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_371093b068b71b59613f",
+                "key": "list_detail.widget_default_color",
+                "label": "Default Color",
+                "required": true,
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": true,
+                "allow_multiple": true,
+                "random_mode": true
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "e27ea32e4e31019e7f6b",
+        "type": "column",
+        "layout": {
+          "num_of_col": 3,
+          "fields": [
+            [
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_1438f6f4236a5c6fd907",
+                "key": "list_detail.widget_border_width",
+                "label": "Border Width",
+                "required": true,
+                "default_value": 2,
+                "link_type": "key",
+                "min_value": 1,
+                "suffix": "px",
+                "trigger": [],
+                "decimal_place": 0
+              },
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_2b42e5ce176a46718249",
+                "key": "list_detail.widget_cutout_percentage",
+                "label": "Cutout Percentage",
+                "required": true,
+                "default_value": 0,
+                "link_type": "key",
+                "min_value": 1,
+                "suffix": "%",
+                "trigger": [],
+                "decimal_place": 0
+              }
+            ],
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_4450ae35f89503ffdd92",
+                "key": "list_detail.widget_point_style",
+                "label": "Point Style",
+                "required": true,
+                "default_value": "circle",
+                "link_type": "key",
+                "entity": "custom",
+                "options": [
+                  "circle",
+                  "cross",
+                  "crossRot",
+                  "dash",
+                  "line",
+                  "rect",
+                  "rectRounded",
+                  "rectRot",
+                  "star",
+                  "triangle"
+                ],
+                "mode": "single",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_150018cd3548e7ffcc94",
+                "key": "list_detail.widget_column_type",
+                "label": "Column Type",
+                "required": true,
+                "default_value": "bar",
+                "link_type": "key",
+                "entity": "custom",
+                "options": [
+                  "bar",
+                  "horizontalBar"
+                ],
+                "mode": "single",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "d00c643f5513b036f52c",
+        "type": "column",
+        "layout": {
+          "num_of_col": 3,
+          "fields": [
+            [
+               {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_2b42e5ce176a46718249",
+                "key": "list_detail.widget_chart_format_day",
+                "label": "Chart Grouping Day",
+                "required": true,
+                "default_value": "DD/MM/YYYY",
+                "link_type": "key",
+                "trigger": []
+              },
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_2b42e5ce176a46712249",
+                "key": "list_detail.widget_chart_format_quarter",
+                "label": "Chart Grouping Quarter",
+                "required": true,
+                "default_value": "MM/YYYY",
+                "link_type": "key",
+                "trigger": []
+              }
+            ],
+            [
+                {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_2b42e5ca376a46718249",
+                "key": "list_detail.widget_chart_format_week",
+                "label": "Chart Grouping Week",
+                "required": true,
+                "default_value": "W/YYYY",
+                "link_type": "key",
+                "trigger": []
+              },
+               {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_2b42e5ce16wa46718249",
+                "key": "list_detail.widget_chart_format_year",
+                "label": "Chart Grouping Year",
+                "required": true,
+                "default_value": "YYYY",
+                "link_type": "key",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "input",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_2b42e54e176a467182291",
+                "key": "list_detail.widget_chart_format_month",
+                "label": "Chart Grouping Month",
+                "required": true,
+                "default_value": "MM/YYYY",
+                "link_type": "key",
+                "trigger": []
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "refresh"
+  },
+  "name": "List & Detail",
+  "code": "list_detail",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}

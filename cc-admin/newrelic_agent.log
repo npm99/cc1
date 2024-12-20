@@ -1,0 +1,6 @@
+{"v":0,"level":30,"name":"newrelic","hostname":"NNN","pid":4924,"time":"2024-12-19T09:35:51.946Z","msg":"Using New Relic for Node.js. Agent version: 11.23.2; Node version: v18.17.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"NNN","pid":4924,"time":"2024-12-19T09:35:51.951Z","msg":"Module disabled in configuration. Not starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"NNN","pid":17692,"time":"2024-12-19T09:46:35.237Z","msg":"Using New Relic for Node.js. Agent version: 11.23.2; Node version: v18.17.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"NNN","pid":17692,"time":"2024-12-19T09:46:35.245Z","msg":"Module disabled in configuration. Not starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"NNN","pid":3080,"time":"2024-12-19T21:23:25.465Z","msg":"Using New Relic for Node.js. Agent version: 11.23.2; Node version: v18.17.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"NNN","pid":3080,"time":"2024-12-19T21:23:25.475Z","msg":"Module disabled in configuration. Not starting."}

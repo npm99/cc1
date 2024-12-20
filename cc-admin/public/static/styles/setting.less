@@ -1,0 +1,534 @@
+@import "custom-antd.less";
+
+.setting.menu {
+  .ant-tree-title {
+    cursor: default;
+
+    .title-render {
+      display         : flex;
+      border-radius   : 5px;
+      padding         : 0px 5px;
+      align-items     : center;
+      background-color: #f6f7f9;
+      border          : 1px dashed #d9d9d9;
+      min-height      : 42px;
+
+      .move {
+        margin-right: 5px;
+
+        svg {
+          cursor: move;
+        }
+      }
+
+      .title-content {
+        cursor          : pointer;
+        position        : relative;
+        display         : flex;
+        flex-direction  : row;
+        width           : 100%;
+        max-width       : 100%;
+        background-color: #FFFFFF;
+        line-height     : 40px;
+        max-height      : 40px;
+        margin-right    : 5px;
+
+        .icon {
+          width        : 30px;
+          text-align   : center;
+          padding-top  : 7px;
+          margin-bottom: -7px;
+
+          svg {
+            color: @text-color;
+            width: 18px;
+          }
+        }
+
+        .title {
+          width         : calc(100% - 30px);
+          max-width     : calc(100% - 30px);
+          min-width     : 1px;
+          display       : flex;
+          flex-direction: row;
+          flex-wrap     : nowrap;
+          overflow      : hidden;
+
+          .in-title {
+            flex-shrink: 0;
+          }
+
+          .description {
+            padding-left: 15px;
+            font-size   : 12px;
+            color       : #9c9c9c;
+          }
+        }
+
+        .remove {
+          display: none;
+        }
+
+        &.children,
+        &.last-menu {
+          &:hover {
+            .remove {
+              display: none;
+            }
+          }
+        }
+
+        &:hover {
+          .title {
+            padding-right: 34px;
+          }
+
+          &.last-menu .remove,
+          .remove {
+            display : initial;
+            position: absolute;
+            right   : 0;
+            padding : 0px 10px;
+            z-index : 2;
+          }
+        }
+      }
+    }
+  }
+
+  .add-menu {
+    margin: 2px 4px 0px 0px;
+  }
+}
+
+.setting-feature-container {
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-end;
+}
+
+.setting.widget {
+  .form-detail {
+    .ant-form-item.filters {
+      .ant-form-item-control-input-content {
+        div {
+          div:first-child {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+
+    .ant-btn.ant-btn-link {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.provider-setting {
+  &.button-add-location {
+    color       : @primary-color;
+    border-color: @primary-color;
+  }
+
+  &.button-remove-location {
+    color     : @primary-color;
+    margin-top: 8px;
+  }
+
+  &.label-location-group {
+    color: @text-color-label;
+  }
+}
+
+.setting.translate {
+  .translate-container {
+    .list-container {
+      min-height    : 500px;
+      border        : 1px solid @border-color-split;
+      display       : flex;
+      flex-direction: column;
+      height        : 100%;
+    }
+
+    .list-item {
+      border-bottom: 1px solid @border-color-split;
+      width        : 100%;
+      padding      : 10px 15px;
+      cursor       : pointer;
+
+      &:hover {
+        background: @background-color;
+      }
+
+      &.selected {
+        background  : @background-color ;
+        border-right: 6px solid @primary-color;
+      }
+    }
+
+    .form-container {
+      margin: 0 20px;
+    }
+  }
+}
+
+.setting.queue {
+  .queue-container {
+    .list-container {
+      min-height        : 700px;
+      max-height        : 700px;
+      border            : 1px solid @border-color-split;
+      display           : flex;
+      flex-direction    : column;
+      height            : 100%;
+      overflow          : scroll;
+      -ms-overflow-style: none;
+      scrollbar-width   : none;
+    }
+
+    .list-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .list-item {
+      border-bottom: 1px solid @border-color-split;
+      width        : 100%;
+      padding      : 10px 15px;
+      cursor       : pointer;
+
+      &:hover {
+        background: @background-color;
+      }
+
+      &.selected {
+        background  : @background-color ;
+        border-right: 6px solid @primary-color;
+      }
+    }
+
+    .queue-table {
+      height            : 100%;
+      overflow          : scroll;
+      -ms-overflow-style: none;
+      scrollbar-width   : none;
+    }
+
+    .queue-table::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.setting.database {
+  .database-container {
+    .list-container {
+      min-height        : 700px;
+      max-height        : 700px;
+      border            : 1px solid @border-color-split;
+      display           : flex;
+      flex-direction    : column;
+      height            : 100%;
+      overflow          : scroll;
+      -ms-overflow-style: none;
+      scrollbar-width   : none;
+
+      .database-table-row-odd {
+        background-color: #f9f9f9;
+      }
+    }
+
+    .list-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .list-item {
+      border-bottom: 1px solid @border-color-split;
+      width        : 100%;
+      padding      : 10px 15px;
+      cursor       : pointer;
+
+      &:hover {
+        background: @background-color;
+      }
+
+      &.selected {
+        background  : @background-color ;
+        border-right: 6px solid @primary-color;
+      }
+    }
+  }
+}
+
+.setting.menu {
+  .ant-tree-title {
+    cursor: default;
+
+    .title-render-new {
+      display         : flex;
+      // border-radius   : 5px;
+      padding         : 0px 5px;
+      align-items     : center;
+      background-color: #f6f7f9;
+      // border          : 1px dashed #d9d9d9;
+      min-height      : 42px;
+
+      .move {
+        margin-right: 5px;
+
+        svg {
+          cursor: move;
+        }
+      }
+
+      .title-content {
+        cursor          : pointer;
+        position        : relative;
+        display         : flex;
+        flex-direction  : row;
+        width           : 100%;
+        max-width       : 100%;
+        background-color: #FFFFFF;
+        line-height     : 40px;
+        max-height      : 40px;
+        margin-right    : 5px;
+
+        .icon {
+          width        : 30px;
+          text-align   : center;
+          padding-top  : 7px;
+          margin-bottom: -7px;
+
+          svg {
+            color: @text-color;
+            width: 18px;
+          }
+        }
+
+        .title {
+          width         : calc(100% - 30px);
+          max-width     : calc(100% - 30px);
+          min-width     : 1px;
+          display       : flex;
+          flex-direction: row;
+          flex-wrap     : nowrap;
+          overflow      : hidden;
+
+          .in-title {
+            flex-shrink: 0;
+          }
+
+          .description {
+            padding-left: 15px;
+            font-size   : 12px;
+            color       : #9c9c9c;
+          }
+        }
+
+        .remove {
+          display: none;
+        }
+
+        &.children,
+        &.last-menu {
+          &:hover {
+            .remove {
+              display: none;
+            }
+          }
+        }
+
+        &:hover {
+          .title {
+            padding-right: 34px;
+          }
+
+          &.last-menu .remove,
+          .remove {
+            display : initial;
+            position: absolute;
+            right   : 0;
+            padding : 0px 10px;
+            z-index : 2;
+          }
+        }
+      }
+    }
+  }
+
+  .add-menu {
+    margin: 15px 4px 0px 0px;
+  }
+}
+
+.setting-row-vertical-sublayout {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .column-full-height-container {
+    min-height: 44px;
+    height: 100%;
+
+    &.right {
+      border-right: 1px dashed #d9d9d9;
+    }
+
+    &.left {
+      border-left: 1px dashed #d9d9d9;
+    }
+  }
+
+  .column-half-height-container {
+    min-Height: 44px;
+
+    .sub-row {
+      min-Height: 44px;
+
+      &.border-right {
+        border-right: 1px dashed #d9d9d9;
+      }
+
+      &.top {
+        border-top: 1px dashed #d9d9d9;
+      }
+
+      &.bottom {
+        border-bottom: 1px dashed #d9d9d9;
+      }
+
+      &.full-height {
+        height: 100%;
+      }
+    }
+
+    &.bottom-layout {
+      height: 100%;
+    }
+  }
+}
+
+.setting-menu-card {
+  margin-bottom: 10px; 
+
+  .setting-menu-rows {
+    padding: 8px;
+    margin-bottom: 15px;
+    justify-content: flex-end;    
+  }
+
+  .setting-menu-drawer-impor-export {
+    margin-right: 8px;
+  }
+
+  .dnd-rows {
+    border : 1px dashed #d9d9d9;
+    border-radius: 5px;
+  }
+
+  .title-render-new {
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    background-color: #f6f7f9;
+    min-height: 42px;
+  }
+
+  .dnd-container{
+    border: 1px dashed #d9d9d9;
+    
+    .content {
+      width:  100%;
+      padding: 25px;
+      
+    }
+
+    .title-content {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 100%;
+      background-color: #fff;
+      line-height: 40px;
+      max-height: 40px;
+      margin-right: 5px;
+    }   
+  }
+
+  .icon {
+    width: 30px;
+    text-align: center;
+    padding-top: 7px;
+    margin-bottom: -7px;
+
+    svg {
+      width: 18px
+    }
+  }
+
+  .icon-collapse-render {
+    cursor: pointer;
+  }
+
+  .move {
+    cursor: move;
+  }
+  .remove {
+    display: none;
+    // margin: 20px;
+  }
+
+  .title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    line-height: 40px;
+    max-height: 40px;
+    margin-right: 5px;
+   
+  }
+  .title:hover {    
+      .remove{
+        display: initial;        
+      }
+  }
+ 
+  &.children,
+  &.last-menu {
+    &:hover {
+      .remove {
+        display: none;
+      }
+    }
+  }
+
+  .title-content  {
+
+  &:hover {
+    .title {
+      padding-right: 34px;
+    }
+
+    &.last-menu .remove,
+    .remove {
+      display : initial;
+      position: absolute;
+      right   : 0;
+      padding : 0px 10px;
+      z-index : 2;
+    }
+  }
+}
+
+  &:hover {
+    .title {
+      padding-right: 34px;
+    }
+  }   
+}
+

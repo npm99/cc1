@@ -1,0 +1,344 @@
+{
+  "detail": {
+    "title": {},
+    "blocks": [
+      {
+        "key": "i46newwwd9wufibb4ptr",
+        "type": "column",
+        "layout": {
+          "num_of_col": 6,
+          "fields": [
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_0cxyw03hbs5427eijg6r",
+                "key": "toast.toast_position",
+                "label": "Position",
+                "required": true,
+                "default_value": "top-center",
+                "link_type": "key",
+                "entity": "custom",
+                "options": [
+                  "top-center",
+                  "top-right",
+                  "top-left",
+                  "bottom-right",
+                  "bottom-left",
+                  "bottom-center"
+                ],
+                "mode": "single",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "select",
+                "type": "standard_component",
+                "unique_key": "standard_component_select_k8d950b4knx45vxukfx1",
+                "key": "toast.toast_size",
+                "label": "Size",
+                "required": true,
+                "default_value": "full",
+                "link_type": "key",
+                "entity": "custom",
+                "options": [
+                  "full",
+                  "normal"
+                ],
+                "mode": "single",
+                "trigger": []
+              }
+            ],
+            [
+              {
+                "field": "input_number",
+                "type": "standard_component",
+                "unique_key": "standard_component_input_number_97y2zta2kuohyhgxfg49",
+                "key": "toast.toast_delay",
+                "label": "Auto Close Delay",
+                "default_value": 10,
+                "link_type": "key",
+                "min_value": 1,
+                "suffix": "second",
+                "trigger": [],
+                "decimal_place": 0
+              }
+            ],
+            [
+              {
+                "field": "switch",
+                "type": "standard_component",
+                "unique_key": "standard_component_switch_uevds270y7bqkjvos1u1",
+                "key": "toast.toast_icon_close",
+                "label": "Close on click",
+                "default_value": false,
+                "link_type": "key",
+                "yes_label": "Yes",
+                "no_label": "No",
+                "trigger": [],
+                "name": "toast_icon_close"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "j9v9g1p15fhskppmz6vg",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_5lbdt9u61ytip7g8zkdr",
+                "label": "Success",
+                "entity": "test_setting",
+                "format": "<p><strong style=\"font-size: 1.17em;\">Success</strong><br></p>",
+                "hide_label": true
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "upst94ymxe9mxxg9sn7j",
+        "type": "column",
+        "layout": {
+          "num_of_col": 6,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_n7plflwjce1220h4boyj",
+                "key": "toast.toast_success_background_color",
+                "label": "Background Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_szlzjdctdfse21vajxaa",
+                "key": "toast.toast_success_title_color",
+                "label": "Title Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_g9atv7eoun8pjann7r53",
+                "key": "toast.toast_success_description_color",
+                "label": "Description Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "input_icon",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_txk36zueb3po52loyi14",
+                "key": "toast.toast_success_icon",
+                "label": "Icon",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "jngh2k4gnvpi318zr9gv",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_foz8dgwh9i4egqierj01",
+                "label": "Warning",
+                "entity": "test_setting",
+                "format": "<p><strong style=\"font-size: 1.17em;\">Warning</strong><br></p>",
+                "hide_label": true
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "2jzd0me81e3s6qzcpfku",
+        "type": "column",
+        "layout": {
+          "num_of_col": 6,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_shibr219f12e5hvlrml8",
+                "key": "toast.toast_warning_background_color",
+                "label": "Background Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_xxmon5qym40fs2rcacur",
+                "key": "toast.toast_warning_title_color",
+                "label": "Title Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_jrvq8h7s7j315xwt256f",
+                "key": "toast.toast_warning_description_color",
+                "label": "Description Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "input_icon",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_b55rbarjdja210hrol3s",
+                "key": "toast.toast_warning_icon",
+                "label": "Icon",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "key": "ozwgbp3ibwxt2hkyz1o8",
+        "type": "column",
+        "layout": {
+          "num_of_col": 2,
+          "fields": [
+            [
+              {
+                "field": "label",
+                "type": "standard_component",
+                "unique_key": "standard_component_label_whbnp0az2nxih6te7be2",
+                "label": "Error",
+                "entity": "test_setting",
+                "format": "<p><strong style=\"font-size: 1.17em;\">Error</strong><br></p>",
+                "hide_label": true
+              }
+            ],
+            []
+          ]
+        }
+      },
+      {
+        "key": "xq8f99olnf4l68e0bxi9",
+        "type": "column",
+        "layout": {
+          "num_of_col": 6,
+          "fields": [
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_jnwu0vkwut00tqukkzs9",
+                "key": "toast.toast_error_background_color",
+                "label": "Background Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_6nlhesbbdvdk9e3d0hf1",
+                "key": "toast.toast_error_title_color",
+                "label": "Title Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "color_picker",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_ie93e244xxm7r7wg4uep",
+                "key": "toast.toast_error_description_color",
+                "label": "Description Color",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ],
+            [
+              {
+                "field": "input_icon",
+                "type": "standard_component",
+                "unique_key": "standard_component_color_picker_qcf6m48g8ki6vg7kvdb1",
+                "key": "toast.toast_error_icon",
+                "label": "Icon",
+                "link_type": "key",
+                "trigger": [],
+                "allow_alpha": false
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "redirect_mode": "refresh"
+  },
+  "name": "Toast",
+  "code": "toast",
+  "type": [
+    "form"
+  ],
+  "allow_actions": [
+    {
+      "action": "create",
+      "role_restrictions": []
+    },
+    {
+      "action": "update",
+      "role_restrictions": []
+    }
+  ],
+  "deploy_package_settings": [
+    "general"
+  ],
+  "restriction": [],
+  "hide_activity_log": true,
+  "hide_refresh": true
+}
